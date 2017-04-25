@@ -1,0 +1,6 @@
+{
+	  "id"        : "preside-ext-imagemap"
+	, "title"     : "Image Map extension"
+	, "author"    : "Adds client-side image map functionality to content images"
+	, "version"   : "1.0.0"
+}
