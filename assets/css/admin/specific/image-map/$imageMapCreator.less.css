@@ -1,0 +1,113 @@
+/*
+ * Summer html image map creator
+ * http://github.com/summerstyle/summer
+ *
+ * Copyright 2016 Vera Lobacheva (http://iamvera.com)
+ * Released under the MIT license
+ */
+#fieldset-imagemap_areas {
+  display: none;
+}
+#imageMapWrapper {
+  position: relative;
+}
+#imageMapContainer {
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+.draw#imageMapContainer {
+  cursor: crosshair;
+}
+#imageMapContainer map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#imageMapImage {
+  position: relative;
+  z-index: 1;
+}
+/* CSS for SVG-elements */
+#imageMapSvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: inline-block;
+}
+#imageMapSvg rect {
+  stroke-width: 3px;
+  stroke: #0F0;
+  fill: rgba(255, 255, 255, 0.3);
+}
+.edit > #imageMapSvg rect:hover {
+  fill: rgba(50, 200, 50, 0.3);
+}
+#imageMapSvg rect.active {
+  fill: rgba(0, 0, 0, 0.5);
+}
+#imageMapSvg circle {
+  stroke-width: 3px;
+  stroke: #0F0;
+  fill: rgba(255, 255, 255, 0.3);
+}
+.edit > #imageMapSvg circle:hover {
+  fill: rgba(50, 200, 50, 0.3);
+}
+#imageMapSvg polyline,
+#imageMapSvg polygon {
+  stroke-width: 3px;
+  stroke: #0F0;
+  fill: rgba(255, 255, 255, 0.3);
+}
+.edit > #imageMapSvg polygon:hover {
+  fill: rgba(50, 200, 50, 0.3);
+}
+#imageMapSvg .selected {
+  fill: rgba(50, 200, 50, 0.5) !important;
+  stroke: #F00 !important;
+}
+#imageMapSvg rect.helper {
+  fill: #FFF;
+  stroke: #000;
+  stroke-width: 2px;
+}
+#imageMapSvg rect.helper:hover {
+  fill: #F00;
+}
+.edit > #imageMapSvg rect,
+.edit > #imageMapSvg circle,
+.edit > #imageMapSvg polygon {
+  cursor: move;
+}
+.edit > #imageMapSvg .pointer {
+  cursor: pointer;
+}
+.edit > #imageMapSvg .e-resize {
+  cursor: e-resize;
+}
+.edit > #imageMapSvg .ne-resize {
+  cursor: ne-resize;
+}
+.edit > #imageMapSvg .nw-resize {
+  cursor: nw-resize;
+}
+.edit > #imageMapSvg .n-resize {
+  cursor: n-resize;
+}
+.edit > #imageMapSvg .se-resize {
+  cursor: se-resize;
+}
+.edit > #imageMapSvg .sw-resize {
+  cursor: sw-resize;
+}
+.edit > #imageMapSvg .s-resize {
+  cursor: s-resize;
+}
+.edit > #imageMapSvg .w-resize {
+  cursor: w-resize;
+}

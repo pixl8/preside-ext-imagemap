@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form>
-	<tab id="imagemap" sortorder="50" title="cms:ckeditor.imagepicker.imagemap.tab">
+	<tab id="imagemap" sortorder="50" title="formcontrols.imageMap:ckeditor.imagepicker.imagemap.tab">
 		<fieldset sortorder="10">
-			<field name="imagemap" control="imageMap" />
+			<field name="imagemap"             sortorder="10" control="imageMap"                            label="formcontrols.imageMap:field.imagemap.label" />
+		</fieldset>
+		
+		<fieldset id="imagemap_areas" sortorder="20" title="formcontrols.imageMap:fieldset.imagemap_areas.label">
+			<field name="imagemap_alt_text"    sortorder="10" control="textinput"          required="false" label="cms:ckeditor.imagepicker.alt_text.label"    maxLength="200" />
+			<field name="imagemap_link"        sortorder="20" control="textinput"          required="false" label="cms:ckeditor.imagepicker.link.label"        maxLength="500" help="cms:ckeditor.imagepicker.link.help" placeholder="cms:ckeditor.imagepicker.link.placeholder" />
+			<field name="imagemap_link_asset"  sortorder="30" control="assetPicker"        required="false" label="cms:ckeditor.imagepicker.link_asset.label" />
+			<field name="imagemap_link_page"   sortorder="40" control="sitetreePagePicker" required="false" label="cms:ckeditor.imagepicker.link_page.label" />
+			<field name="imagemap_link_target" sortorder="50" control="select"             required="false" label="cms:ckeditor.imagepicker.link_target.label" values="_self,_blank,_parent,_top" removeObjectPickerClass="true" extraClasses="form-control" />
 		</fieldset>
 	</tab>
 </form>
