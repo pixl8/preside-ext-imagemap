@@ -1,6 +1,6 @@
 {
 	  "id"        : "preside-ext-imagemap"
-	, "title"     : "Image Map extension"
-	, "author"    : "Adds client-side image map functionality to content images"
-	, "version"   : "1.0.0"
+	, "title"     : "Preside Image Map extension"
+	, "author"    : "Pixl8 Interactive"
+	, "version"   : "0.1.0"
 }
