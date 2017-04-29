@@ -1,4 +1,4 @@
-#Preside Extension - Image Map
+# Preside Extension - Image Map
 
 This Preside extension adds client-side image map functionality to images added to rich text areas via the imagepicker plugin.
 
