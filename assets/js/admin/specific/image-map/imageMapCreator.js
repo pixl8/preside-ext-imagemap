@@ -2104,7 +2104,7 @@ var presideImageMapCreator = ( function( $ ) {
 			, method  : "POST"
 			, data    : { embeddedImage : content }
 			, success : function( data ) {
-				var imgSrc = $( data ).attr( "src" );
+				var imgSrc = $( data ).find( "img" ).attr( "src" );
 				if ( imgSrc && imgSrc.length ) {
 					app.loadImage( imgSrc );
 				} else {
