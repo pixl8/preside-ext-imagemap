@@ -20,11 +20,11 @@ component output=false {
 				mapArea.target = area.attributes.target == "_self" ? "" : area.attributes.target;
 				mapArea.alt    = area.attributes.alt;
 
-				if( Len( Trim( area.attributes.link_asset ?: "" ) )){
-					mapArea.href = event.buildLink( assetId=area.attributes.link_asset );
+				if( Len( Trim( area.attributes.asset ?: "" ) )){
+					mapArea.href = event.buildLink( assetId=area.attributes.asset );
 				}
-				if( Len( Trim( area.link_page ?: ""  ) )){
-					mapArea.href = event.buildLink( page=area.attributes.link_page );
+				if( Len( Trim( area.attributes.page ?: ""  ) )){
+					mapArea.href = event.buildLink( page=area.attributes.page );
 				}
 
 				switch( area.type ) {
