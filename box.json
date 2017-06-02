@@ -1,11 +1,11 @@
 {
 	"name": "Preside Extension: Image Maps",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": "Pixl8 Interactive",
 	"homepage": "https://github.com/pixl8/preside-ext-imagemap",
 	"type": "preside-extensions",
 	"directory": "application/extensions",
-	"location": "https://github.com/pixl8/preside-ext-imagemap/archive/v1.0.2.zip",
+	"location": "https://github.com/pixl8/preside-ext-imagemap/archive/v1.0.3.zip",
 	"repository": {
 		"type": "git",
 		"URL": "https://github.com/pixl8/preside-ext-imagemap"
