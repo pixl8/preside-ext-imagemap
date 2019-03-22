@@ -53,7 +53,7 @@
 		<a href="#Trim( args.link )#" target="#( args.link_target ?: '_self' )#"<cfif !hasFigure> style="display:block;#style#"</cfif>>
 	</cfif>
 
-	<img src="#imgSrc#" alt="#altText#"<cfif !hasFigure && !hasLink> style="#style#"</cfif><cfif hasImageMap> usemap="#( args.mapid )#"</cfif>>
+	<img src="#imgSrc#" alt="#altText#"<cfif !hasFigure && !hasLink> style="#style#"</cfif><cfif hasImageMap> usemap="###( args.mapid )#"</cfif>>
 
 	<cfif hasLink>
 		</a>
